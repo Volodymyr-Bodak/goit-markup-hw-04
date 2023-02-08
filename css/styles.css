@@ -18,10 +18,8 @@ body {
 }
 .link_one:hover,
 .link_one :focus{
-  color: darkblue;
+  color: #404BBF;
 }
-
-
 .button1 {
    color: #4D5AE5;
     font-weight: 500;
@@ -32,7 +30,8 @@ body {
 button:focus,
 button:active,
 button:hover{
-   color: blue;
+   background-color: #404BBF;
+   
 }
 button {
     cursor: pointer;
@@ -106,8 +105,13 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5em;
-  
 }
+.references_part:hover,
+ .references_part:focus {
+  color: #404BBF;
+  text-decoration: underline #404BBF;
+}
+
 .footerd {
   color: #E7E9FC;
   font-size: 16px;
@@ -153,6 +157,9 @@ button {
   padding-top: 188px;
   padding-bottom: 188px;
   display: block;
+  max-width: 1440px;
+  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office.jpg);
+  background-repeat: no-repeat;
 }
 .team {
   background: #F4F4FD;
@@ -277,17 +284,134 @@ header {
   border: 1px solid #E7E9FC;
   max-width: 360px;
 }
+.list_distance:is(:hover,:focus) {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .haupt_section {
   padding-bottom: 120px;
   padding-top: 84px;
 }
+.cards_one {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ border-radius: 0px 0px 4px 4px;
+}
+.third_titel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+  text-align: center;
+}
+.customer_section {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
 
+.customer_number {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 72px;
+}
+.ending_icons {
+  fill: #AFB1B8;
+}
+.ending_icons :hover,
+.ending_icons :focus {
+  fill: #404BBF;
+}
+.svg_block {
+  width: 264px;
+  background: #F4F4FD;
+  border-radius: 4px;
+  height: 112px; 
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+}
+.border_icon {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+}
+.border_icon:hover,
+.border_icon :focus {
+  border: 1px solid #404BBF;
+}
+.sub_icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: #4D5AE5;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-top: 15px;
+  padding-bottom: 12px;
+}
+.sub_icon:hover,
+.sub_icon:focus {
+  background:  #404BBF;
+}
+.icon_row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  text-align: center;
+  justify-content: center;
+}
+.mini_footer {
+  font-weight: 500;
+ font-size: 16px;
+ line-height: 1.5;
+ color: #FFFFFF;
+ letter-spacing: 0.02em;
+  
+
+}
+.icon_row_two {
+  display: flex;
+  margin-top: 16px;
+  gap: 24px;
+}
+.footer_two {
+  align-items: center;
+  margin-right: 800px;
+}
+
+.one_footer {
+  display: flex;
+}
+.sub_icon_two {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background:rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-top: 15px;
+  padding-bottom: 12px;
+}
+.sub_icon_two:hover,
+.sub_icon_two:focus {
+  background:#31D0AA;
+}
 html {
   box-sizing: border-box;
 }
 *::before,
 *::after {
   box-sizing: inherit;
+  width: 104px;
+  height: 56px;
 }
 .solution_titel {
   text-align: center;
