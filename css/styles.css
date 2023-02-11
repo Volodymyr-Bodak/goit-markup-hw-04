@@ -26,6 +26,8 @@ body {
     font-size: 16px;
     line-height: 1.5em;
     font-family: 'Roboto';
+    border-radius: 5%;
+
 }
 button:focus,
 button:active,
@@ -33,7 +35,7 @@ button:hover{
    background-color: #404BBF;
    
 }
-.button2
+.button2 
 button {
     cursor: pointer;
 }
@@ -49,6 +51,9 @@ button {
     margin-left: auto;
     margin-right: auto;
     display: block;
+
+    
+    
     
 }
 .button1 {
@@ -297,7 +302,7 @@ header {
   max-width: 360px;
 }
 .list_distance:is(:hover,:focus) {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .haupt_section {
@@ -342,7 +347,7 @@ header {
   justify-content: center;
 }
 
-.border_icon {
+.ending_icons {
   padding-top: 16px;
   padding-bottom: 16px;
   text-align: center;
@@ -351,21 +356,18 @@ header {
   width: 168px;
   height: 88px;
   fill: #8E8F99;
+  display: block;
 }
 
-.border_icon:hover,
-.border_icon :focus {
+.ending_icons:hover,
+.ending_icons:focus {
   border-color: #404BBF;
 }
-.border_icon:hover,
-.border_icon :focus .ending_icons {
+.ending_icons:hover,
+.ending_icons:focus .ending_icon {
   fill:#404BBF ;
 }
-.sub_icon {
-  display: flex;
-  background: #4D5AE5;
-  border-radius: 50%;
-}
+
 .references_icon {
   width: 40px;
   height: 40px;
@@ -373,12 +375,13 @@ header {
   justify-content: center;
   padding-top: 12px;
   padding-bottom: 12px;
+   display: flex;
+  background: #4D5AE5;
+  border-radius: 50%;
+  display: block;
 }
-.sub_icon:hover {
-  background:  #404BBF;
-}
-.sub_icon:focus {
-  background:  #404BBF;
+.references_icon:is(:hover, :focus) {
+  background: #404BBF;
 }
 .icon_row {
   display: flex;
@@ -400,7 +403,11 @@ header {
 .icon_row_two {
   display: flex;
   margin-top: 16px;
-  gap: 24px;
+  gap: 16px;
+  text-decoration: none;
+  color:  #2E2F42;
+  
+
 }
 .footer_two {
   align-items: center;
@@ -409,20 +416,27 @@ header {
 
 .one_footer {
   display: flex;
+  flex-direction: row;
 }
-.sub_icon_two {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  background:rgba(255, 255, 255, 0.1);
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding-top: 15px;
-  padding-bottom: 12px;
+
+
+.work_icon{
+   
+   width: 40px;
+   height: 40px;
+   background:rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
+   padding-top: 15px;
+   padding-bottom: 13px; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+  
 }
-.sub_icon_two:hover,
-.sub_icon_two:focus {
+
+.work_icon:hover,
+.work_icon:focus {
   background:#31D0AA;
 }
 html {
